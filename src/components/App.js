@@ -1,6 +1,9 @@
 import React from "react";
 import axios from "axios";
+
 import SearchInput from "./SearchInput";
+import ImageList from './ImageList';
+
 // import CustomInput from "./CustomInput";
 class App extends React.Component {
   // state = {
@@ -52,7 +55,7 @@ class App extends React.Component {
 
         {/* <button onClick={this.onChangeInput(this.state.inputState)}>Enviar</button> */}
 
-        We have {this.state.images.length} images
+        <ImageList images={this.state.images} />
       </div>
     );
   }
